@@ -1,0 +1,33 @@
+{
+  "name": "weather-cli",
+  "version": "1.0.0",
+  "description": "CLI for getting weather",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node weather.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OleksandrBalashov/weather-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "weather"
+  ],
+  "author": "Alexandr Balashov <aleksandr.balashov.sax@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OleksandrBalashov/weather-cli/issues"
+  },
+  "homepage": "https://github.com/OleksandrBalashov/weather-cli#readme",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chalk": "^4.1.2",
+    "dedent-js": "^1.0.1"
+  }
+}
