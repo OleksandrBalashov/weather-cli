@@ -1,6 +1,28 @@
 import axios from 'axios';
-import https from 'https';
 import { getKeyValue } from './storage.service.js';
+
+export const getIcon = icon => {
+  switch (icon.slice(0, -1)) {
+    case '01':
+      return '☀️';
+    case '02':
+      return '🌤️';
+    case '03':
+      return '☁️';
+    case '04':
+      return '☁️';
+    case '09':
+      return '🌧️';
+    case '10':
+      return '🌦️';
+    case '11':
+      return '🌩️';
+    case '13':
+      return '❄️';
+    case '50':
+      return '🌫️';
+  }
+};
 
 export const getWeather = async city => {
   try {
@@ -20,7 +42,7 @@ export const getWeather = async city => {
         },
       }
     );
-    console.log(data);
+
     return data;
   } catch (err) {
     console.log(err.message);
